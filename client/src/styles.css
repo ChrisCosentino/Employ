@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-red: #ea5251;
+  --color-purple: #241953;
+  --color-light-grey: #dbebf8;
+  --color-white: #ffffff;
+  --border-radius: 5px;
+}
+
+.landing-container {
+  height: 100vh;
+  background-color: var(--color-light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.subtitle {
+  font-weight: 300;
+  margin-bottom: 55px;
+}
+
+.form-container {
+  background-color: var(--color-white);
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.form-input {
+  width: 220px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.input-location {
+  border-left: 1px solid var(--color-light-grey);
+  text-align: center;
+}
+
+.search-btn {
+  padding: 10px;
+  border: none;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.jobs-container {
+  padding: 35px;
+}
+
+.heading-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin: 10px;
+  background-color: var(--color-purple);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+.job-container {
+  margin: 10px;
+  background-color: var(--color-light-grey);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+.job-title {
+}
+
+.job-company {
+}
+
+.job-city {
+}
+
+.apply-btn {
+  text-decoration: none;
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.apply-btn:hover {
+  background-color: var(--color-red);
+  color: white;
+}
