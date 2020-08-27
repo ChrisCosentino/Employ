@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Landing from "./Landing";
 import Jobs from "./postings/Jobs";
 
 const Home = () => {
   return (
-    <div>
+    <Fragment>
       <Landing />
       <Jobs />
-    </div>
+    </Fragment>
   );
 };
 

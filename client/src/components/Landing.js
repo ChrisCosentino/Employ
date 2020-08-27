@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Interview from "../interview.png";
+import { scroller } from "react-scroll";
 
 const Landing = () => {
   const [jobText, setJobText] = useState("");
@@ -14,6 +16,12 @@ const Landing = () => {
 
   const handleForm = (e) => {
     e.preventDefault();
+
+    scroller.scrollTo("jobs", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
   };
 
   return (
@@ -40,6 +48,7 @@ const Landing = () => {
           Find Job
         </button>
       </form>
+      {/* <img src={Interview} className="landing-img" /> */}
     </div>
   );
 };

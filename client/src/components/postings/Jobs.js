@@ -27,7 +27,7 @@ const Jobs = () => {
     // <div>
     //   <JobItem />
     // </div>
-    <div className="jobs-container">
+    <div className="jobs-container" id="jobs">
       <h1 className="title">Jobs</h1>
       <div className="heading-container">
         <div className="heading-title">Title</div>

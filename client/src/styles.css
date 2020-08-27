@@ -22,6 +22,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(https://www.vhv.rs/dpng/d/275-2756945_job-search-png-transparent-png.png);
+  background-blend-mode: darken;
+  background-position: cover;
+  background-repeat: no-repeat;
 }
 
 .title {

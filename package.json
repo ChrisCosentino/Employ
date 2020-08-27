@@ -4,7 +4,10 @@
   "description": "A job search website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "job",
@@ -17,5 +20,10 @@
   "devDependencies": {
     "concurrently": "^5.3.0",
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1"
   }
 }
